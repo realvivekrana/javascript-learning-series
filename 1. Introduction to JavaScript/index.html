@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to JS</title>
+    <style type="text/css">
+        .transformation{
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            padding: 10px;
+            margin: 30px;
+            width: 100px;
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="mystyle" style="padding: 10px;">
+        <div class="transformation" id="first">
+            This is a First div
+        </div>
+        <div id="second">
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById("second").innerHTML = "This is second div";
+        document.getElementById("first").style.backgroundColor = "blue";
+        document.body.style.backgroundColor = "green";
+    </script>
+</body>
+</html>

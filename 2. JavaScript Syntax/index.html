@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to JS</title>
+    <style type="text/css">
+        .transformation{
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            padding: 10px;
+            margin: 30px;
+            width: 100px;
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="mystyle" style="padding: 10px;">
+        <span id="second">
+        </span>
+        <span id="third">
+        </span>
+    </div>
+
+    <script type="text/javascript">
+       var fruit = "Banana";
+       var price = 160 + 40;
+       document.getElementById("second").innerHTML = fruit;
+       document.getElementById("third").innerHTML = price;
+       console.log(`My fav fruit is ${fruit} and its costs Rs. ${price}`);
+    </script>
+</body>
+</html>
