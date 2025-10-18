@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Loops</title>
+</head>
+<body>
+    <script>
+        /*
+        1 X 1 = 1
+        1 X 2 = 2
+        ...
+        10 X 10 = 100
+        */
+       for (var i = 1; i <= 10; i++) {
+        console.log("Table of " + i);
+        for (var j = 1; j <= 10; j++) {
+            var line = i + " X " + j + " = " + (1*j);
+            console.log(line);
+        }
+        console.log("");
+       }
+    </script>
+</body>
+</html>
