@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="greeting()">Greeting</button>
+    <button onclick="welcome()">Click me</button>
+    <button onclick="add()">Addition</button>
+    <script>
+        function welcome(){
+            const name = prompt("Enter your name");
+            alert("Welcome "+name);
+        }
+        function greeting(){
+            alert("Good Evening...")
+        }
+        function add(){
+            
+            console.log("Button clicked");
+            //take 2 number as prompt and perform addition
+             let num1 = Number(prompt("Enter first number"));
+            let num2 = Number(prompt("Enter second number"));
+
+            // perform addition
+            let sum = num1 + num2;
+
+            // show result
+            alert("Addition is: " + sum);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functions Program</title>
+</head>
+<body>
+
+<script>
+    function simpleinterest(principle, roi, noy){
+        return (principle * roi * noy) / 100;
+    }
+
+    function square(n){
+        return n * n;
+    }
+
+    function cube(n){
+        return n * n * n;
+    }
+
+    function main(){
+        const option = Number(prompt(
+            "Enter:\n1 for Simple Interest\n2 for Square\n3 for Cube"
+        ));
+
+        switch(option){
+            case 1:
+                const p = Number(prompt("Enter Principal Amount"));
+                const r = Number(prompt("Enter Rate of Interest"));
+                const n = Number(prompt("Enter Number of Years"));
+                console.log("Simple Interest: " + simpleinterest(p, r, n));
+                break;
+
+            case 2:
+                const num1 = Number(prompt("Enter a number"));
+                console.log("Square: " + square(num1));
+                break;
+
+            case 3:
+                const num2 = Number(prompt("Enter a number"));
+                console.log("Cube: " + cube(num2));
+                break;
+
+            default:
+                console.log("Invalid option");
+        }
+    }
+
+    // CALL THE FUNCTION
+    main();
+</script>
+
+</body>
+</html>
