@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = 10;
+        function abc(){
+            let y = 20;
+            console.log("I am inside abc with x = " + x + " y = " + y);
+            function xyz(){
+                let z = 30;
+                console.log("I am inside xyz with x = " + x + " y = " + y + " z = " + z);
+            }
+            xyz();
+        }
+        abc();
+    </script>
+</body>
+</html>

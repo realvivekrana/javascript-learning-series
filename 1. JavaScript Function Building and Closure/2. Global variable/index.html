@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let name = 'Nitesh';  //let is not a global varial that is print undefined
+        // let lastname = 'Gupta';
+
+        var name = 'Nitesh';  // var is a global variable
+        var lastname = 'Gupta';
+        let animal = {
+            name: 'Lion',
+            color: 'Yellow'
+        }
+
+        let bird = {
+            name: 'Parrot',
+            color: 'Green'
+        }
+
+        function print(){
+            console.log(this.name + " " + this.lastname);
+        }
+
+        print();
+    </script>
+</body>
+</html>
