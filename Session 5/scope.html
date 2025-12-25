@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function scoping(){
+            if (true){
+                let a = "apple"; //function scope
+                var b = "banana"; //block scope
+
+                console.log(`Inside Block var : ${a}`);
+                console.log(`Inside Block let : ${b}`);
+            }
+
+            console.log(`Outside Block in Function var : ${a}`);
+            // console.log(`Outside Block in Function let : ${b}`); //Error
+        }
+        scoping();
+        console.log(`Outside the function var : ${a}`); //error
+    </script>
+</body>
+</html>
