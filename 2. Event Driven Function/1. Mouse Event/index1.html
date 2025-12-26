@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="document.getElementById('time').innerHTML=Date()">Show Time</button>
+
+    <div id="time"></div>
+
+    <div onmouseover="document.body.style.backgroundColor='blue'"
+    onmouseout="document.body.style.backgroundColor='red'"
+    id="changecolor"
+    >Mouseover to change color of page to Blue</div>
+
+    <script>
+        document.getElementById('changecolor').onmousedown = function(){
+            alert('Mouse Down is Ocured');
+        };
+        document.getElementById('changecolor').onmouseup = function(){
+            alert('Mouse Up is Ocured');
+        };
+    </script>
+
+    
+</body>
+</html>

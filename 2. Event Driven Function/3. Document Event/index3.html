@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onresize="document.body.style.backgroundColor='green'">
+
+    <input type="text" id="keyEvents"/>
+
+    <button onclick="document.getElementById('time').innerHTML = Date()">Show Time</button>
+
+    <div id="changecolor">
+        Mouseover to change color of page to blue
+    </div>
+
+    <div id="time"></div>
+
+    <script>
+        var i = 0;
+        var box = document.getElementById('changecolor');
+
+        box.onmouseover = function () {
+            document.body.style.backgroundColor = 'blue';
+            i++;
+            document.getElementById('time').innerHTML =
+                "Mouse over is called with i: " + i;
+        };
+
+        box.onmouseout = function () {
+            document.body.style.backgroundColor = 'red';
+        };
+
+        box.onmousedown = function () {
+            alert('Mouse Down is Occurred');
+        };
+
+        box.onmouseup = function () {
+            alert('Mouse Up is Occurred');
+        };
+
+        document.getElementById('keyEvents').onkeydown = function(){
+            document.getElementById('time').innerHTML="key is Down";
+        }
+
+        document.getElementById('keyEvents').onkeydown = function(){
+            document.getElementById('time').innerHTML="key is UP";
+        }
+
+        document.getElementById('keyEvents').onkeydown = function(){
+            document.getElementById('time').style.backgroundColor = 'yellow'
+        }
+
+        document.body.onload = function(){
+            alert("Document is loaded");
+        }
+
+         document.body.onload = function(){
+            alert("Document is loaded");
+        }
+    </script>
+
+</body>
+</html>
