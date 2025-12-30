@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //simple object
+        const person={
+            name: 'Sonam Soni',
+            age: 37,
+            city: 'Mumbai',
+            email: 'sonam@gmail.com'
+        }
+        console.log(person);
+        //access indivisual values
+
+        //print in console
+        console.log("Name: "+ person.name);
+        console.log("Age: "+ person.age);
+        console.log("City: "+ person.city);
+        console.log("Email: "+ person.email);
+
+        //print in page (browser)
+        document.write('<h3>Name: '+person.name +"<h3>");
+        document.write('<h3>Age: ' +person.age +"<h3>");
+        document.write('<h3>City: ' +person.city +"<h3>");
+        document.write('<h3>Email: ' +person.email +"<h3>");
+
+        //let's modify
+        
+        //person = {name: 'Sonam N. Soni', age:30}; it's give error
+
+        person.name = "Sonam N. Soni";
+        person.age = "30";
+        person.country = "India";
+        delete person.email; //for delete
+
+        document.write('<h3>Name: '+person.name +"<h3>");
+        document.write('<h3>Age: ' +person.age +"<h3>");
+        document.write('<h3>City: ' +person.city +"<h3>");
+        document.write('<h3>Email: ' +person.email +"<h3>");
+        document.write('<h3>Country: ' +person.country +"<h3>");
+
+        console.log(person['country']); //print for console
+    </script>
+</body>
+</html>
