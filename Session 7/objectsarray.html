@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const array = [
+            {
+                id:1,
+                name:'alex',
+                email:'alex@gmail.com',
+                country:'uk',
+                gpa: 6.6
+            },
+            {
+                id:2,
+                name:'gagan',
+                email:'gagan@gmail.com',
+                country:'us',
+                gpa: 7.6
+            },
+            {
+                id:3,
+                name:'rohan',
+                email:'rohan@gmail.com',
+                country:'india',
+                gpa: 6.9
+            },
+            {
+                id:4,
+                name:'rahul',
+                email:'rahul@gmail.com',
+                country:'india',
+                gpa: 9.6
+            }
+        ]
+        //print
+        for(let obj of array){
+            console.log(obj.id,obj.name,obj.email,obj.country);
+        }
+
+        //filter only those ussers who are from uk country
+        const ukpeople = array.filter(function(value){
+            return value.country == 'india'
+        })
+        console.log(ukpeople);
+
+        const result = array.filter(function(value){
+            return value.gpa > 8
+        })
+        console.log(result);
+    </script>
+</body>
+</html>

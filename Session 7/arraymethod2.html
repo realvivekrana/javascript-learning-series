@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const array = [1,2,3,4,5,6,7,8,9,10];
+        // //search a particular number we have find method
+        // //which will return only 1 number if found otherwise send undefined
+
+        // const found = array.find(function(value){
+        //     return value == 15;
+        // })
+        // console.log(found);
+
+        function search(array,num) {
+            const found = array.find(function (value){
+                return value == num;
+            })
+            if(found != undefined){
+                console.log(`found: ${found}`);
+            }else{
+                console.log('Not found');
+            }
+        }
+
+        // search([10,20,30,40,50,60], 80);
+        // search(['apple','ball','cat','dog','elephant'], 'ball');
+
+        function searchIndex(array,num) {
+            const found = array.findIndex(function (value){
+                return value == num;
+            })
+            //if found then return particular index number
+            //if not found then return -1.
+            if(found >= 0){
+                console.log(`found: ${found}`);
+            }else{
+                console.log('Not found');
+            }
+        }
+
+        searchIndex([10,20,30,40,50,60], 80);
+        searchIndex(['apple','ball','cat','dog','elephant'], 'dog');
+    </script>
+</body>
+</html>
