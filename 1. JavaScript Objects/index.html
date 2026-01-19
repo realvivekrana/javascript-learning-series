@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="show"></div>
+    <script>
+        let student = {
+            name: "Nitesh",
+            class: "V",
+            status: "Pass",
+            totalMarks: 100
+        };
+
+        let original = 0;
+        function updateVariable(x){
+            x.totalMarks = 10;
+        }
+
+        console.log("Original Value : " + student.totalMarks);
+        updateVariable(student);
+        console.log("Upadate Value : " + student.totalMarks);
+
+        // document.getElementById("show").innerHTML = student.name;
+    </script>
+</body>
+</html>

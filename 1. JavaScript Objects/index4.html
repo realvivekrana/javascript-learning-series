@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="show"></div>
+    <script>
+        let student1 = {
+            name: "Nitesh",
+            class: "V",
+            status: "Pass",
+            totalMarks: 100,
+            20: 100,
+            display: function(){
+                console.log(this.name);
+            }
+        };
+
+        function StudentStructure(name, sclass, status, totalMarks){
+            this.name = name;
+            this.sclass = sclass;
+            this.status = status;
+            this.totalMarks = totalMarks;
+        }
+
+        let student2 = new StudentStructure("Aman", "IV", "Pass", 80);
+        
+
+    </script>
+</body>
+</html>
