@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        let jsonObject = {
+            "Firstname": "John",
+            "Lastname": "Doe",
+            "middleName": "Smith",
+            "age": 30,
+            "isIncity": true,
+            "subjects": ["Math", "Science", "History"],
+            "address": {
+                "street": "123 Main St",
+                "city": "Anytown",
+                "country": "USA"
+            },
+            "dob": "1990-01-01",
+            "print": function() {
+                console.log(this.Firstname);
+            }
+        };
+
+        jsonObject.print = jsonObject.print.toString();
+
+        localStorage.setItem("jsonObject", JSON.stringify(jsonObject));
+        
+        // for (const key in jsonObject) {
+        //     console.log(key + ": " + jsonObject[key]);
+        // }
+
+        // let subjects = ["Math", "Science", "History"];
+        // let marks = '[85, 90, 78]';
+        // let marksArray = JSON.parse(marks);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
