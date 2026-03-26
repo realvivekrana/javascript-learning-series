@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const word = ["india", "america", "nepal", "china", "japan", "england"];
+        console.log(word);
+        let upper = word.filter(function(value){
+            if(value.length > 6){
+                return value;
+            }
+        });
+        console.log(upper);
+        upper.forEach(function(value){
+            console.log(value.toUpperCase());
+        })
+    </script>
+</body>
+</html>

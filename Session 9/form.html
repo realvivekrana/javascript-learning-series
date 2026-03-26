@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="fullname(event)">
+        <input type="text" id="fname" placeholder="First Name">
+        <br><br>
+        <input type="text" id="lname" placeholder="Last Name">
+        <br><br>
+        <button type="submit">Show Full Name </button>
+    </form>
+    <h1 id="messege"></h1>
+    <script>
+        function fullname(e){
+            e.preventDefault();
+            const input1 = document.getElementById("fname")
+            const input2 = document.getElementById("lname")
+            const fname = input1.value;
+            const lname = input2.value;
+            document.getElementById("messege").innerHTML=`Welcome ${fname} ${lname}`
+        }
+    </script>
+</body>
+</html>
