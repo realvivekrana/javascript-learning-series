@@ -1,0 +1,95 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body Styling */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+/* Main Container */
+body {
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Timer Display Button */
+#btn {
+    width: 180px;
+    height: 80px;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #2a5298;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: default;
+}
+
+/* Buttons Common Style */
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Start Button */
+button:nth-child(2) {
+    background: #28a745;
+    color: white;
+}
+
+button:nth-child(2):hover {
+    background: #218838;
+}
+
+/* Stop Button */
+button:nth-child(3) {
+    background: #dc3545;
+    color: white;
+}
+
+button:nth-child(3):hover {
+    background: #c82333;
+}
+
+/* Clear Button */
+button:nth-child(4) {
+    background: #ffc107;
+    color: black;
+}
+
+button:nth-child(4):hover {
+    background: #e0a800;
+}
+
+/* Button Group Layout */
+button:not(#btn) {
+    min-width: 100px;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    #btn {
+        width: 140px;
+        height: 70px;
+        font-size: 24px;
+    }
+
+    button {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+}
