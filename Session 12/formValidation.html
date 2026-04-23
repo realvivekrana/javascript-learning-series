@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Validation</title>
+</head>
+<body>
+
+    <h2>Form Validation</h2>
+
+    Name: <input type="text" id="fname">
+    <span id="errorFname"></span>
+    <br><br>
+
+    Phone: <input type="text" id="phone">
+    <span id="errorPhone"></span>
+    <br><br>
+
+    <button onclick="validate()">Save</button>
+
+    <script>
+        function validate(){
+
+            // only alphabets
+            let namePattern = /^[A-Za-z]+$/;
+
+            // 10 digits starting 6-9
+            let phonePattern = /^[6-9][0-9]{9}$/;
+
+            let name = document.getElementById("fname").value;
+            let phone = document.getElementById("phone").value;
+
+            // Name validation
+            if(!namePattern.test(name)){
+                document.getElementById("errorFname").innerHTML = "Name can have only alphabets";
+                document.getElementById("errorFname").style.color = "red";
+            } else {
+                document.getElementById("errorFname").innerHTML = "";
+            }
+
+            // Phone validation
+            if(!phonePattern.test(phone)){
+                document.getElementById("errorPhone").innerHTML = "Phone is not valid";
+                document.getElementById("errorPhone").style.color = "red";
+            } else {
+                document.getElementById("errorPhone").innerHTML = "";
+            }
+        }
+    </script>
+
+</body>
+</html>
