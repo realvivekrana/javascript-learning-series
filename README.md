@@ -16,31 +16,61 @@ This is a **daily learning repository** where I:
 
 ---
 
-## 📚 Topics Covered
+## 📚 JavaScript Topics Covered
 
-✔️ Variables & Data Types  
-✔️ Operators & Expressions  
-✔️ Functions & Arrow Functions  
-✔️ Arrays & Objects  
-✔️ DOM Manipulation  
-✔️ Events Handling  
-✔️ ES6+ Features  
-✔️ Async JavaScript (Promises, Async/Await)  
-✔️ Projects (Coming Soon 🚀)  
+### 🔹 Basics
+- Variables (var, let, const)  
+- Data Types  
+- Operators  
+- Type Conversion  
 
----
+### 🔹 Control Flow
+- if / else  
+- switch  
+- Loops (for, while, do-while)  
+- Break & Continue  
 
-## 📅 Progress Tracker
+### 🔹 Functions
+- Function Declaration  
+- Function Expression  
+- Arrow Functions  
+- Default Parameters  
+- Rest & Spread Operators  
 
-| Day | Topic |
-|-----|------|
-| Day 1 | Introduction to JavaScript |
-| Day 2 | Variables & Data Types |
-| Day 3 | Functions |
-| Day 4 | Arrays |
-| Day 5 | Objects |
-| Day 6 | Arrow Functions |
-| ... | Updating Daily 🚀 |
+### 🔹 Arrays & Objects
+- Array Methods (map, filter, reduce)  
+- Object Properties & Methods  
+- Destructuring  
+- Optional Chaining  
+
+### 🔹 DOM Manipulation
+- Selecting Elements  
+- Changing Content & Styles  
+- Event Listeners  
+- Form Handling  
+
+### 🔹 Advanced JavaScript
+- Closures  
+- Scope & Hoisting  
+- Call, Apply, Bind  
+- Prototypes & Inheritance  
+
+### 🔹 ES6+ Features
+- let & const  
+- Template Literals  
+- Arrow Functions  
+- Modules (import/export)  
+
+### 🔹 Asynchronous JavaScript
+- Callbacks  
+- Promises  
+- Async / Await  
+- Fetch API  
+
+### 🔹 Projects (Coming Soon 🚀)
+- Mini Projects  
+- Practice Apps  
+- Real-world Applications  
 
 ---
 
