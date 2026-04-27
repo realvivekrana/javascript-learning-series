@@ -1,0 +1,22 @@
+Phonebook
+......................................
+Create one Class Phone
+                 Names:
+                 Contacts:[]
+
+          display(); print contact name and its contact
+
+          updateContact(num)
+                       :update your contact Array
+
+
+CreateDirectory
+.......................................
+array ussers = []
+
+add contact
+      craete object of any contact and push it yours array
+updateContact
+removeContact
+displayAll
+     foreach loop print all
